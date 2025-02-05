@@ -1,0 +1,10 @@
+type Query {
+    allTransactions: [ErpTransaction]
+}
+
+type ErpTransaction {
+    id: ID!
+    erpTransactionId: String!
+    amount: Float!
+    description: String!
+}
