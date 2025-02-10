@@ -2,9 +2,14 @@ type Query {
     allTransactions: [ErpTransaction]
 }
 
+type Mutation {
+    bankTransactionsSync: String
+}
+
 type ErpTransaction {
     id: ID!
     erpTransactionId: String!
     amount: Float!
     description: String!
 }
+
